@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/github6022244/GGYYKit.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Developer' => '1563084860@gg.com' }
-  #s.source           = { :git => 'https://github.com/github6022244/GGYYKit.git', :tag => s.version.to_s }
-  s.source = { :git => 'git@github.com:github6022244/GGYYKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/github6022244/GGYYKit.git', :tag => s.version.to_s }
+  #s.source = { :git => 'git@github.com:github6022244/GGYYKit.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '13.0'
 
