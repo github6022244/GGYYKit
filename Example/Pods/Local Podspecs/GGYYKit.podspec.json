@@ -1,8 +1,8 @@
 {
   "name": "GGYYKit",
   "version": "0.1.1",
-  "summary": "修复YYKit兼容等问题",
-  "description": "YYKit已经很久不维护，自己封装个Pod，修复YYKit兼容等问题",
+  "summary": "修复 YYKit 兼容等问题",
+  "description": "YYKit 已经很久不维护，自己封装个 Pod，修复 YYKit 兼容等问题",
   "homepage": "https://github.com/github6022244/GGYYKit.git",
   "license": {
     "type": "MIT",
@@ -18,33 +18,40 @@
   "platforms": {
     "ios": "13.0"
   },
-  "default_subspecs": [
-    "Core",
-    "NoARC"
-  ],
-  "pod_target_xcconfig": {
-    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES",
-    "APPLICATION_EXTENSION_API_ONLY": "NO"
+  "requires_arc": true,
+  "source_files": "GGYYKit/Classes/**/*",
+  "ios": {
+    "exclude_files": [
+      "GGYYKit/Classes/Base/Foundation/NSObject+YYAddForARC.{h,m}",
+      "GGYYKit/Classes/Base/Foundation/NSThread+YYAdd.{h,m}"
+    ],
+    "vendored_frameworks": "Vendor/WebP.framework"
   },
+  "libraries": [
+    "z",
+    "sqlite3"
+  ],
+  "frameworks": [
+    "UIKit",
+    "CoreFoundation",
+    "CoreText",
+    "CoreGraphics",
+    "CoreImage",
+    "QuartzCore",
+    "ImageIO",
+    "AssetsLibrary",
+    "Accelerate",
+    "MobileCoreServices",
+    "SystemConfiguration"
+  ],
   "subspecs": [
     {
-      "name": "Core",
-      "source_files": "GGYYKit/Classes/**/*",
-      "exclude_files": [
-        "GGYYKit/Classes/Base/Foundation/NSObject+YYAddForARC.{h,m}",
-        "GGYYKit/Classes/Base/Foundation/NSThread+YYAdd.{h,m}"
-      ],
-      "dependencies": {
-        "GGYYKit/NoARC": []
-      }
-    },
-    {
-      "name": "NoARC",
+      "name": "no-arc",
+      "requires_arc": false,
       "source_files": [
         "GGYYKit/Classes/Base/Foundation/NSObject+YYAddForARC.{h,m}",
         "GGYYKit/Classes/Base/Foundation/NSThread+YYAdd.{h,m}"
-      ],
-      "requires_arc": false
+      ]
     }
   ]
 }
