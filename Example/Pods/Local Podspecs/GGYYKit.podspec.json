@@ -24,6 +24,10 @@
     "GGYYKit/Classes/Base/Foundation/NSObject+YYAddForARC.m",
     "GGYYKit/Classes/Base/Foundation/NSThread+YYAdd.m"
   ],
+  "pod_target_xcconfig": {
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES",
+    "APPLICATION_EXTENSION_API_ONLY": "NO"
+  },
   "subspecs": [
     {
       "name": "NoARC",
@@ -31,7 +35,8 @@
         "GGYYKit/Classes/Base/Foundation/NSObject+YYAddForARC.m",
         "GGYYKit/Classes/Base/Foundation/NSThread+YYAdd.m"
       ],
-      "compiler_flags": "-fno-objc-arc"
+      "compiler_flags": "-fno-objc-arc",
+      "header_dir": "GGYYKit"
     }
   ]
 }

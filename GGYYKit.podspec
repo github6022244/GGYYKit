@@ -39,10 +39,15 @@ Pod::Spec.new do |s|
       'GGYYKit/Classes/Base/Foundation/NSThread+YYAdd.m'
     ]
     na.compiler_flags = '-fno-objc-arc'
+    # 确保头文件也能被正确引用
+    na.header_dir = 'GGYYKit'
   end
   
-  # 如果这些文件不存在，请注释掉NoARC子规范或添加对应的文件
-  # 如果文件确实不存在，请先创建这些文件，或者移除对它们的引用
+  # 针对过期API的警告忽略设置
+  s.pod_target_xcconfig = {
+    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+    'APPLICATION_EXTENSION_API_ONLY' => 'NO'
+  }
   
   # s.resource_bundles = {
   #   'GGYYKit' => ['GGYYKit/Assets/*.png']
