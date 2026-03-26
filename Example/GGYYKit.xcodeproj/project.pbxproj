@@ -69,7 +69,7 @@
 		C60EFDFB2F7524140086A614 /* GGAsyncLayerTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGAsyncLayerTestViewController.m; sourceTree = "<group>"; };
 		C60EFDFD2F7527EB0086A614 /* fix_config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fix_config.json; sourceTree = "<group>"; };
 		D19EEED7EE8DF2F203F10A14 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		D37DB8EA48950DCD8E609917 /* GGYYKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GGYYKit.podspec; path = ../GGYYKit.podspec; sourceTree = "<group>"; };
+		D37DB8EA48950DCD8E609917 /* GGYYKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GGYYKit.podspec; path = ../GGYYKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E0D1AC568A5EB6BF39AACF64 /* Pods-GGYYKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGYYKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-GGYYKit_Example/Pods-GGYYKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EA1C2F97B776324B49FEFD36 /* Pods-GGYYKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGYYKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GGYYKit_Tests/Pods-GGYYKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */

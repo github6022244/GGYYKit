@@ -1,42 +1,35 @@
 Pod::Spec.new do |s|
   s.name             = 'GGYYKit'
-  s.version          = '0.1.0'
-  s.summary          = '修复YYKit兼容等问题'
-
+  s.version          = '0.1.1'
+  s.summary          = '修复 YYKit 兼容等问题'
   s.description      = <<-DESC
-    YYKit已经很久不维护，自己封装个Pod，修复YYKit兼容等问题
+    YYKit 已经很久不维护，自己封装个 Pod，修复 YYKit 兼容等问题
                        DESC
-
   s.homepage         = 'https://github.com/github6022244/GGYYKit.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Developer' => '1563084860@gg.com' }
   s.source           = { :git => 'https://github.com/github6022244/GGYYKit.git', :tag => s.version.to_s }
-  #s.source = { :git => 'git@github.com:github6022244/GGYYKit.git', :tag => s.version.to_s }
-
   s.ios.deployment_target = '13.0'
 
-  s.default_subspecs = 'NoARC'
-
-  # 主要源文件（排除非ARC相关的.m文件）
+  # 完全复制 YYKit 的写法
+  s.requires_arc = true
   s.source_files = 'GGYYKit/Classes/**/*'
-  s.exclude_files = [
-    'GGYYKit/Classes/Base/Foundation/NSObject+YYAddForARC.m',
-    'GGYYKit/Classes/Base/Foundation/NSThread+YYAdd.m'
+  
+  non_arc_files = [
+    'GGYYKit/Classes/Base/Foundation/NSObject+YYAddForARC.{h,m}',
+    'GGYYKit/Classes/Base/Foundation/NSThread+YYAdd.{h,m}'
   ]
-
-  # 非 ARC 子模块 - 包含头文件和实现文件
-  s.subspec 'NoARC' do |na|
-    na.source_files = [
-      'GGYYKit/Classes/Base/Foundation/NSObject+YYAddForARC.{h,m}',
-      'GGYYKit/Classes/Base/Foundation/NSThread+YYAdd.{h,m}'
-    ]
-    na.compiler_flags = '-fno-objc-arc'
-    na.requires_arc = false
+  
+  # 使用 s.ios.exclude_files（与 YYKit 一致）
+  s.ios.exclude_files = non_arc_files
+  
+  # 创建 no-arc subspec
+  s.subspec 'no-arc' do |sna|
+    sna.requires_arc = false
+    sna.source_files = non_arc_files
   end
   
-  # 针对过期API的警告忽略设置
-  s.pod_target_xcconfig = {
-    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-    'APPLICATION_EXTENSION_API_ONLY' => 'NO'
-  }
+  s.libraries = 'z', 'sqlite3'
+  s.frameworks = 'UIKit', 'CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary', 'Accelerate', 'MobileCoreServices', 'SystemConfiguration'
+  s.ios.vendored_frameworks = 'Vendor/WebP.framework'
 end
