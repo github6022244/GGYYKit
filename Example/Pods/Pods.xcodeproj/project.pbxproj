@@ -122,6 +122,7 @@
 		55D39C173DC639D9F8A7CEC413DD111D /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CB060D08599DD864B5B6F74ED64C24 /* YYClassInfo.m */; };
 		5609A17A3161726065ABA287592B5B9A /* XCTest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCB589DC8253A7CC52B48C5CFC400EA /* XCTest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58802A9495E69AF92A339BA03EB581B2 /* Specta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE4596C95132D5FC84194E5D046DEE3 /* Specta-dummy.m */; };
+		59903FEBDC7AD0A35963AD14D2F8F84E /* NSThread+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D3CA01184A8E943FDB4F947218EA0D /* NSThread+YYAdd.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
 		5B0E7991CA9F44AE2A0F6947348D5C80 /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF013EE264D088C0697458EC1BA0379 /* EXPMatchers+raiseWithReason.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5DBFC741402AEA1412A93A44E3D9264A /* Pods-GGYYKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E53BDC1190764A8B146A9277B29BC855 /* Pods-GGYYKit_Example-dummy.m */; };
 		5ED97A9244A6C672F6EE855FAD295CD7 /* NSObject+YYAddForKVO.h in Headers */ = {isa = PBXBuildFile; fileRef = 21AAE68C11DF82689A809E234A3A9807 /* NSObject+YYAddForKVO.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -136,7 +137,6 @@
 		62B0B2ABAD4CD2D4C8F8F63DA8CF865A /* YYWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C0C494D72743DE7E1AAF8EC35D040E0 /* YYWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6345DB4769EF1AE6B9A1CC063CC9E5D6 /* YYImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BD3B376175B5DC69BB3514F3801E073 /* YYImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		634A79630B41662134DBD12F9A7AEA87 /* ExpectaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8794D436AF7CD02C352F33E8756DA6AA /* ExpectaObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		63EF65C2B3E96248F16CA653D19735D4 /* NSObject+YYAddForARC.m in Sources */ = {isa = PBXBuildFile; fileRef = D155334214D4045BBFA23FBE421CD209 /* NSObject+YYAddForARC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		64434E2336169C6A2A37AA2D9BA1B37B /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = F323BE9CCBD74D21580F57285BADF0E8 /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		64618C119DD372AA7156E4C81F77BF55 /* EXPMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BF4C9FFB0A78AC6EDF88B9D1F647C94 /* EXPMatchers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6496F2E7D663FBB01DA4C01B69A12A87 /* NSParagraphStyle+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C777B93C3091E999E4696527313A119 /* NSParagraphStyle+YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -165,6 +165,7 @@
 		7CF3F3FC8B4D51D0F60036DD1B80ECC9 /* YYTextRubyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EAC339AA338DA377D946231FF31FAF2 /* YYTextRubyAnnotation.m */; };
 		7D70C549D805D91D019D3C8B58B6F920 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = F2562E42CC03567292CE055CC33D5EA5 /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7DA350FB4FCF9560DADE8B7133F2A3BD /* UIPasteboard+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF21740F719253813281C9F7AAB18A6 /* UIPasteboard+YYText.m */; };
+		7EFD5E812696E4FAA6F78D3F483BC98D /* NSObject+YYAddForARC.m in Sources */ = {isa = PBXBuildFile; fileRef = D155334214D4045BBFA23FBE421CD209 /* NSObject+YYAddForARC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
 		7F2890900164EEF794C13FA2458A16C4 /* CALayer+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 852607A314BB0378A1831243AD807D01 /* CALayer+YYWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F4A5C422A2BF4D9BAAB76C3027A6E5D /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3943D3C18A52F89C35EA5388EF540445 /* EXPMatchers+respondTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8088D73CA5CC632D197E241132395A61 /* EXPBlockDefinedMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0C329E0C2B9EC458C20A17D1E8A134 /* EXPBlockDefinedMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -275,7 +276,6 @@
 		DC76944FDD8F9693AE264D90C1330044 /* YYTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F739F739F7506BEA1A4BFAA3D351CF /* YYTextParser.m */; };
 		DCA8BF4AD6B5FEDED3F59A41BC04813E /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B673AF948331D276A91FD8111F4DCF1 /* EXPMatchers+beGreaterThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DCC91C1F8C3F3610AB47945D5E590B46 /* NSNumber+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = A56893A637346A203EE751FAC4D2E005 /* NSNumber+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE7EDCF923CDB879532C455D570DBD75 /* NSThread+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D3CA01184A8E943FDB4F947218EA0D /* NSThread+YYAdd.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DF7ED740D26676FD775C90A9E7BC34D7 /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C434CE614C6FF519706E65A461EDED /* EXPFloatTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DFA53098F205377C01A8965559B159AA /* EXPMatchers+respondTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 932012295DBE9940094FF147CF412A27 /* EXPMatchers+respondTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E07FCF546D848B5D9B606418790412EF /* YYFileHash.m in Sources */ = {isa = PBXBuildFile; fileRef = A3950E38D071C298E61511EECE96C49F /* YYFileHash.m */; };
@@ -2037,12 +2037,12 @@
 				B5F0BA6E3106AACC9EF15D7353A42B54 /* NSNotificationCenter+YYAdd.m in Sources */,
 				1078E026D26F2A90ED0B7B9779141BF0 /* NSNumber+YYAdd.m in Sources */,
 				4CE140A8B8D90A5E005CF3C8E1308F01 /* NSObject+YYAdd.m in Sources */,
-				63EF65C2B3E96248F16CA653D19735D4 /* NSObject+YYAddForARC.m in Sources */,
+				7EFD5E812696E4FAA6F78D3F483BC98D /* NSObject+YYAddForARC.m in Sources */,
 				8AAA40C64951C21649ED232DAB4B5466 /* NSObject+YYAddForKVO.m in Sources */,
 				1249DD98AF5BEF984D7001B1B95B884D /* NSObject+YYModel.m in Sources */,
 				8BF6D1AE080318DE6284CD48ED9EF85F /* NSParagraphStyle+YYText.m in Sources */,
 				0237E4C53075BD6B005F63FADAC89A0E /* NSString+YYAdd.m in Sources */,
-				DE7EDCF923CDB879532C455D570DBD75 /* NSThread+YYAdd.m in Sources */,
+				59903FEBDC7AD0A35963AD14D2F8F84E /* NSThread+YYAdd.m in Sources */,
 				234F4B655405F2DE1767F3100DA81663 /* NSTimer+YYAdd.m in Sources */,
 				FBFA053E8169317E7BB8833270B4F7ED /* UIApplication+YYAdd.m in Sources */,
 				2E6F3131D8364303DAC0CEE5CCD19B7D /* UIBarButtonItem+YYAdd.m in Sources */,

@@ -104,6 +104,8 @@
 #import "types.h"
 #import "YYKit.h"
 #import "YYKitFix.h"
+#import "NSObject+YYAddForARC.h"
+#import "NSThread+YYAdd.h"
 
 FOUNDATION_EXPORT double GGYYKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char GGYYKitVersionString[];

@@ -32,11 +32,11 @@
     {
       "name": "NoARC",
       "source_files": [
-        "GGYYKit/Classes/Base/Foundation/NSObject+YYAddForARC.m",
-        "GGYYKit/Classes/Base/Foundation/NSThread+YYAdd.m"
+        "GGYYKit/Classes/Base/Foundation/NSObject+YYAddForARC.{h,m}",
+        "GGYYKit/Classes/Base/Foundation/NSThread+YYAdd.{h,m}"
       ],
       "compiler_flags": "-fno-objc-arc",
-      "header_dir": "GGYYKit"
+      "requires_arc": false
     }
   ]
 }
