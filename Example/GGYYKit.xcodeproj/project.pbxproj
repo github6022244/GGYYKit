@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B39888F314A2BA61563E8F63 /* Pods_GGYYKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9367E356274DC7E36B47C5 /* Pods_GGYYKit_Example.framework */; };
+		C60EFDFC2F7524140086A614 /* GGAsyncLayerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C60EFDFB2F7524140086A614 /* GGAsyncLayerTestViewController.m */; };
+		C60EFDFE2F7527EB0086A614 /* fix_config.json in Resources */ = {isa = PBXBuildFile; fileRef = C60EFDFD2F7527EB0086A614 /* fix_config.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +64,12 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8ECDE07841999E0344B2E5D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D19EEED7EE8DF2F203F10A14 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		D37DB8EA48950DCD8E609917 /* GGYYKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GGYYKit.podspec; path = ../GGYYKit.podspec; sourceTree = "<group>"; };
+		8ECDE07841999E0344B2E5D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C60EFDFA2F7524140086A614 /* GGAsyncLayerTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGAsyncLayerTestViewController.h; sourceTree = "<group>"; };
+		C60EFDFB2F7524140086A614 /* GGAsyncLayerTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGAsyncLayerTestViewController.m; sourceTree = "<group>"; };
+		C60EFDFD2F7527EB0086A614 /* fix_config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fix_config.json; sourceTree = "<group>"; };
+		D19EEED7EE8DF2F203F10A14 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D37DB8EA48950DCD8E609917 /* GGYYKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GGYYKit.podspec; path = ../GGYYKit.podspec; sourceTree = "<group>"; };
 		E0D1AC568A5EB6BF39AACF64 /* Pods-GGYYKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGYYKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-GGYYKit_Example/Pods-GGYYKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EA1C2F97B776324B49FEFD36 /* Pods-GGYYKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGYYKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GGYYKit_Tests/Pods-GGYYKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +137,8 @@
 		6003F593195388D20070C39A /* Example for GGYYKit */ = {
 			isa = PBXGroup;
 			children = (
+				C60EFDFD2F7527EB0086A614 /* fix_config.json */,
+				C60EFDF92F7524000086A614 /* Fix列表 */,
 				6003F59C195388D20070C39A /* GGAppDelegate.h */,
 				6003F59D195388D20070C39A /* GGAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -193,8 +200,16 @@
 				EA1C2F97B776324B49FEFD36 /* Pods-GGYYKit_Tests.debug.xcconfig */,
 				2804B034F56F87FF8FEFF0C6 /* Pods-GGYYKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C60EFDF92F7524000086A614 /* Fix列表 */ = {
+			isa = PBXGroup;
+			children = (
+				C60EFDFA2F7524140086A614 /* GGAsyncLayerTestViewController.h */,
+				C60EFDFB2F7524140086A614 /* GGAsyncLayerTestViewController.m */,
+			);
+			path = "Fix列表";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +223,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				8B387643A420A7790C6DEFC9 /* [CP] Embed Pods Frameworks */,
+				B5E2C0DC8B5237BFB2FC8727 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +264,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = github6022244;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = T2F27PSC94;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +277,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -278,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C60EFDFE2F7527EB0086A614 /* fix_config.json in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -340,7 +360,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8B387643A420A7790C6DEFC9 /* [CP] Embed Pods Frameworks */ = {
+		B5E2C0DC8B5237BFB2FC8727 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -391,6 +411,7 @@
 			files = (
 				6003F59E195388D20070C39A /* GGAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* GGViewController.m in Sources */,
+				C60EFDFC2F7524140086A614 /* GGAsyncLayerTestViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +540,7 @@
 			baseConfigurationReference = E0D1AC568A5EB6BF39AACF64 /* Pods-GGYYKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T2F27PSC94;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GGYYKit/GGYYKit-Prefix.pch";
 				INFOPLIST_FILE = "GGYYKit/GGYYKit-Info.plist";
@@ -535,6 +557,7 @@
 			baseConfigurationReference = 1EE43B7EB22EBE961C7C39A3 /* Pods-GGYYKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T2F27PSC94;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GGYYKit/GGYYKit-Prefix.pch";
 				INFOPLIST_FILE = "GGYYKit/GGYYKit-Info.plist";

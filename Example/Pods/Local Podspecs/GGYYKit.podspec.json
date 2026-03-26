@@ -1,22 +1,37 @@
 {
   "name": "GGYYKit",
   "version": "0.1.0",
-  "summary": "A short description of GGYYKit.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/github6022244/GGYYKit",
+  "summary": "修复YYKit兼容等问题",
+  "description": "YYKit已经很久不维护，自己封装个Pod",
+  "homepage": "https://github.com/github6022244/GGYYKit.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "github6022244": "1563084860@qq.com"
+    "Developer": "1563084860@gg.com"
   },
   "source": {
     "git": "https://github.com/github6022244/GGYYKit.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "13.0"
   },
-  "source_files": "GGYYKit/Classes/**/*"
+  "default_subspecs": "NoARC",
+  "source_files": "GGYYKit/Classes/**/*",
+  "exclude_files": [
+    "GGYYKit/Classes/Base/Foundation/NSObject_YYAddForARC.m",
+    "GGYYKit/Classes/Base/Foundation/NSThread+YYAdd.m"
+  ],
+  "subspecs": [
+    {
+      "name": "NoARC",
+      "source_files": [
+        "GGYYKit/Classes/Base/Foundation/NSObject+YYAddForARC.m",
+        "GGYYKit/Classes/Base/Foundation/NSThread+YYAdd.m"
+      ],
+      "compiler_flags": "-fno-objc-arc"
+    }
+  ]
 }
