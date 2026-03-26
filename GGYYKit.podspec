@@ -1,11 +1,3 @@
-#
-# Be sure to run `pod lib lint GGYYKit.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'GGYYKit'
   s.version          = '0.1.0'
@@ -36,7 +28,7 @@ Pod::Spec.new do |s|
   
   # 排除非 ARC 文件，避免被主 spec 重复包含
   s.exclude_files = [
-    'GGYYKit/Classes/Base/Foundation/NSObject_YYAddForARC.m',
+    'GGYYKit/Classes/Base/Foundation/NSObject+YYAddForARC.m',
     'GGYYKit/Classes/Base/Foundation/NSThread+YYAdd.m'
   ]
 
@@ -49,11 +41,14 @@ Pod::Spec.new do |s|
     na.compiler_flags = '-fno-objc-arc'
   end
   
+  # 如果这些文件不存在，请注释掉NoARC子规范或添加对应的文件
+  # 如果文件确实不存在，请先创建这些文件，或者移除对它们的引用
+  
   # s.resource_bundles = {
   #   'GGYYKit' => ['GGYYKit/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.public_header_files = 'GGYYKit/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

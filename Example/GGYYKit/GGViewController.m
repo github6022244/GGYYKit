@@ -111,9 +111,10 @@
     NSDictionary *item = self.fixItems[indexPath.row];
     Class vcClass = item[@"vcClass"];
     NSString *className = NSStringFromClass(vcClass);
+    NSString *title = item[@"title"];
     
     UIViewController *targetVC = [[vcClass alloc] init];
-    targetVC.title = [className stringByReplacingOccurrencesOfString:@"GG" withString:@""];
+    targetVC.title = title;
     
     [self.navigationController pushViewController:targetVC animated:YES];
 }

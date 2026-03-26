@@ -2,7 +2,7 @@
   "name": "GGYYKit",
   "version": "0.1.0",
   "summary": "修复YYKit兼容等问题",
-  "description": "YYKit已经很久不维护，自己封装个Pod",
+  "description": "YYKit已经很久不维护，自己封装个Pod，修复YYKit兼容等问题",
   "homepage": "https://github.com/github6022244/GGYYKit.git",
   "license": {
     "type": "MIT",
@@ -21,7 +21,7 @@
   "default_subspecs": "NoARC",
   "source_files": "GGYYKit/Classes/**/*",
   "exclude_files": [
-    "GGYYKit/Classes/Base/Foundation/NSObject_YYAddForARC.m",
+    "GGYYKit/Classes/Base/Foundation/NSObject+YYAddForARC.m",
     "GGYYKit/Classes/Base/Foundation/NSThread+YYAdd.m"
   ],
   "subspecs": [
